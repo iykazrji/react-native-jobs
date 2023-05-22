@@ -12,6 +12,7 @@ import {
 
 export default function Home() {
 	const router = useRouter();
+	const [jobsSearchTerm, setJobsSearchTerm] = useState("");
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
 			<Stack.Screen
@@ -40,7 +41,11 @@ export default function Home() {
 			/>
 
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<Welcome />
+				<Welcome
+					searchTerm={jobsSearchTerm}
+					setSearchTerm={setJobsSearchTerm}
+					handleClick={() => {}}
+				/>
 				<Popularjobs />
 				<Nearbyjobs />
 			</ScrollView>

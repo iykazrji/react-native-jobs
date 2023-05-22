@@ -10,6 +10,23 @@
 			"image": "./assets/adaptive-icon.png",
 			"resizeMode": "contain",
 			"backgroundColor": "#ffffff"
-		}
+		},
+		"extra": {
+			"eas": {
+				"projectId": "02eafc06-fabb-45c1-bf05-8235efaa4efa"
+			}
+		},
+		"ios": {
+			"bundleIdentifier": "com.iykazorji.reactnativejobs"
+		},
+		"plugins": [
+			[
+				"@morrowdigital/watermelondb-expo-plugin",
+				{
+					"databases": ["morrow.db"]
+				}
+			],
+			["expo-build-properties"]
+		]
 	}
 }
